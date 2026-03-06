@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Eduardo & Beatriz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #c5a059;
+            --dark: #2c2c2c;
+            --bg: #fdfbf8;
+            --border: #e5e0d8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f4f1ec;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark);
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .card-menu {
+            width: 100%;
+            max-width: 600px;
+            background: var(--bg);
+            padding: 20px;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+        }
+
+        /* Borda Interna Elegante */
+        .inner-border {
+            border: 1px solid var(--gold);
+            padding: 40px 30px;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 50px;
+        }
+
+        .logo {
+            width: 80px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 36px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            letter-spacing: 4px;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .ornament {
+            width: 100px;
+            height: 1px;
+            background: var(--gold);
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .ornament::after {
+            content: "✦";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg);
+            padding: 0 10px;
+            color: var(--gold);
+            font-size: 14px;
+        }
+
+        /* Seções do Menu */
+        section {
+            margin-bottom: 45px;
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            font-style: italic;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item-title {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+
+        .description {
+            font-size: 13px;
+            color: #777;
+            font-style: italic;
+        }
+
+        /* Layout Grid para Principais */
+        .principais-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .price-tag {
+            margin-top: 30px;
+            font-family: 'Cormorant Garamond', serif;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+
+        .price-value {
+            font-size: 28px;
+            color: var(--dark);
+            display: block;
+        }
+
+        .price-info {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #999;
+        }
+
+        .kids-section {
+            background: #faf9f6;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 11px;
+            letter-spacing: 1px;
+            color: #aaa;
+            text-transform: uppercase;
+        }
+
+        /* Responsividade */
+        @media (max-width: 480px) {
+            .inner-border { padding: 30px 15px; }
+            h1 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-menu">
+        <div class="inner-border">
+            
+            <header>
+                <img src="https://cdn-icons-png.flaticon.com/512/3663/3663842.png" alt="Monograma" class="logo"> <h1>Beatriz & Eduardo</h1>
+                <div class="subtitle">Menu do Casamento</div>
+                <div class="ornament"></div>
+            </header>
+
+            <section>
+                <h2>Entrada</h2>
+                <div class="item">
+                    <p class="item-title">Salada DuBê</p>
+                    <p class="description">Quinoa real, mix de funghi, notas cítricas e redução artesanal de balsâmico.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Pratos Principais</h2>
+                <div class="principais-list">
+                    <div class="item">
+                        <p class="item-title">Spaghetti na Manteiga de Ervas</p>
+                        <p class="description">Acompanha clássico filé à parmegiana gratinado.</p>
+                    </div>
+                    <div class="item">
+                        <p class="item-title">Arroz de Costela Premium</p>
+                        <p class="description">Temperado com Zaatar e finalizado com coalhada seca.</p>
+                    </div>
+                    <div class="item">
+                        <p class="item-title">Pescado Grelhado ao Azeite</p>
+                        <p class="description">Legumes sazonais e purê aveludado de mandioquinha.</p>
+                    </div>
+
+                    <section>
+                        <h2>Sobremesa</h2>
+                        <div class="item">
+                            <p class="item-title">Gelato de Pistache Italiano</p>
+                            <p class="description">Servido com calda densa de chocolate amargo.</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="price-tag">
+                    <span class="price-info">Experiência Completa (Entrada + Principal + Sobremesa)</span>
+                    <span class="price-value">R$ 79,00</span>
+                </div>
+            </section>
+
+            <section class="kids-section">
+                <h2>Menu Kids</h2>
+                <div class="item">
+                    <p class="item-title">Spaghetti na Manteiga com Iscas de Carne</p>
+                    <p class="price-info" style="color: var(--gold); margin-top: 5px;">R$ 59,00</p>
+                </div>
+            </section>
+
+            
+
+            <footer>
+                Celebrando o amor • 2026 <br><br>
+                <span style="font-size:10px; text-transform:none;">
+                    Desenvolvido por Eduardo • Noivo e Dev 
+                </span>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>
